@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEOH: Story and Status Uploader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>VIDEOH: Story and Status Uploader</h1>
+        <p>Paste a YouTube link and select a platform to download and split your video.</p>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="form-container">
+                <form id="video-form">
+                    <label for="video-url">YouTube Video URL:</label>
+                    <input type="text" id="video-url" placeholder="Paste YouTube video link here" required>
+                    
+                    <label for="platform">Select Platform:</label>
+                    <select id="platform" required>
+                        <option value="" disabled selected>Select Platform</option>
+                        <option value="whatsapp">WhatsApp (30 sec)</option>
+                        <option value="instagram">Instagram (1 min)</option>
+                        <!-- Add more platforms as needed -->
+                    </select>
+                    
+                    <button type="submit">Download and Split</button>
+                </form>
+            </div>
+            
+            <div id="results-section">
+                <!-- Results will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 VIDEOH. Made with <i class="fas fa-heart"></i>.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
